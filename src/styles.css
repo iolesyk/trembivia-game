@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+button {
+  font-size: 16px;
+  width: 150px;
+  padding: 10px 0px;
+  text-align: center;
+  background: #F8B003;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+img.logo {
+  width: 100px;
+}
+
+img.avatar {
+  width: 30px;
+  vertical-align: baseline;
+}
+
+

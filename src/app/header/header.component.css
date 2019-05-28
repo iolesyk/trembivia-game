@@ -1,0 +1,100 @@
+header {
+  background: rgba(11, 10, 14, 0.83);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.avatar * {
+  vertical-align: middle;
+}
+
+.avatar span {
+  padding: 10px;
+}
+
+.boosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.boosts > button {
+  border: 2px solid #F8B003;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 25px 0;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  color: white;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 180%;
+  margin-left: -60px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 97%;
+  left: 6px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.boosts > button:hover {
+  background: #F8B003;
+  color: black;
+}
+
+.boosts > button:disabled:hover {
+  background: transparent;
+  color: white;
+}
+
+.boosts > button:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
