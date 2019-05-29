@@ -1,7 +1,10 @@
 header {
   background: rgba(11, 10, 14, 0.83);
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +45,7 @@ header {
   width: 70px;
   height: 70px;
   text-align: center;
-  padding: 25px 0;
+  /*padding: 25px 0;*/
   margin: 0 10px;
   cursor: pointer;
   position: relative;
@@ -51,6 +54,7 @@ header {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  outline: none;
 }
 
 .tooltiptext {

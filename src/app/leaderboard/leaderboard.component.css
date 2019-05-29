@@ -1,0 +1,38 @@
+.leaders {
+  text-align: left;
+  width: 100%;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+.user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.balance {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}

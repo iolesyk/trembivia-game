@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 .container {
@@ -15,6 +16,7 @@
 h2 {
   font-size: 25px;
   font-weight: 400;
+  margin: 10px 0;
 }
 
 button {

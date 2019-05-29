@@ -1,0 +1,24 @@
+.cash-out {
+  display: flex;
+}
+.container>div {
+  padding: 10px 0;
+  border-bottom: 1px solid #343336;
+}
+.cash-out, .balance {
+  display: flex;
+  align-items: center;
+}
+.balanceSumm {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.cash-out .actions{
+  margin-left: 20px;
+}
+.cash-out .actions button{
+  margin-left: 20px;
+}
+

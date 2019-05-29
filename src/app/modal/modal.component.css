@@ -1,0 +1,7 @@
+.modal-body, .modal-footer {
+  text-align: center;
+  justify-content: center;
+}
+p {
+  margin-bottom: 0;
+}

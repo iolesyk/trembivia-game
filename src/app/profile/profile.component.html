@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="profile">
+  <div class="container">
+    <div class="balance">
+      <h2>Balance </h2>
+      <span class="balanceSumm">{{balance}}&#36;</span>
+    </div>
+    <div class="cash-out">
+      <h2>Cash-out </h2>
+      <div class="actions">
+        <button class="shop" type="button" (click)="callAlert()">Paypal</button>
+        <button class="shop" type="button" (click)="callAlert()">Credit card</button>
+      </div>
+    </div>
+    <div class="games-history">
+     <h2>My games history</h2>
+      <p>You haven’t played any game yet</p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

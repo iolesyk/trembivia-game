@@ -1,8 +1,9 @@
 <header>
   <div class="container">
     <div class="avatar">
-      <img class="avatar" src="../../assets/img/avatar.png" alt="logo">
-      <span>{{name}}</span>
+      <a routerLink="/profile"><img class="avatar" src="../../assets/img/avatar.png" alt="logo">
+      <span>{{name}}</span></a>
+      <router-outlet></router-outlet>
     </div>
 
     <div class="boosts">
@@ -17,7 +18,7 @@
     </div>
 
     <div class="logo">
-      <img class="logo" src="../../assets/img/logo_trembit.png" alt="logo">
+      <a routerLink="/main"> <img class="logo" src="../../assets/img/logo_trembit.png" alt="logo"></a>
     </div>
   </div>
 </header>
