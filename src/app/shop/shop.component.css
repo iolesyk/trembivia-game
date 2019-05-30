@@ -1,0 +1,53 @@
+.redirect-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.back-profile {
+  width: auto;
+  padding: 10px 20px;
+}
+h2 {
+  text-align: center;
+}
+.boosts-shop {
+  border-top: 1px solid #0b0a0e30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+}
+.boosts-shop>div {
+  border: 1px solid #0b0a0e30;
+  padding: 30px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.boosts-shop>div:hover {
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(0,0,0,.05);
+  box-shadow: 1px 1px 13px 3px rgba(0,0,0,.05);
+}
+.name, .price {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5px 0;
+}
+.boosts-shop button {
+  border-radius: 0;
+  margin: 10px 0;
+}

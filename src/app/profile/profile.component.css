@@ -3,7 +3,7 @@
 }
 .container>div {
   padding: 10px 0;
-  border-bottom: 1px solid #343336;
+  border-bottom: 1px solid  #0b0a0e30;
 }
 .cash-out, .balance {
   display: flex;

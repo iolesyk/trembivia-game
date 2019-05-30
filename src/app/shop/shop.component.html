@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="shop">
+  <div class="container">
+    <div class="redirect-buttons">
+      <button class="back-main" type="button" (click)="redirectMainMenu()">Back</button>
+      <button class="back-profile" type="button" (click)="redirectProfile()">Add payment sysytem</button>
+    </div>
+    <h2>Boosts</h2>
+    <div class="boosts-shop">
+      <div class="half-length" (click)="callAlert()">
+        <div class="name">
+          1/2
+        </div>
+        <div class="price">
+          1 &#36;
+        </div>
+        <button class="buy btn btn-success" type="button" (click)="callAlert()">Buy</button>
+      </div>
+      <div class="correct-sector" (click)="callAlert()">
+        <div class="name">
+          Sector
+        </div>
+        <div class="price">
+          1 &#36;
+        </div>
+        <button class="buy btn btn-success" type="button" (click)="callAlert()">Buy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

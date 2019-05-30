@@ -5,3 +5,13 @@
 p {
   margin-bottom: 0;
 }
+.modal-body {
+  padding: 40px 20px;
+}
+
+.modal-footer {
+  padding: 0;
+}
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
