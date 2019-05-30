@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<div class="container">
+  <div class="game-board">
+
+    <div *ngIf="!round && round != 0" class="pre-game">
+      <app-pre-game></app-pre-game>
+    </div>
+
+    <div *ngIf="round || round == 0" class="host-block" [ngClass]="{'active': round >= 0}">
+      <app-host></app-host>
+    </div>
+
+    <app-chat [round]="round"></app-chat>
+
+  </div>
+</div>
+<app-footer></app-footer>

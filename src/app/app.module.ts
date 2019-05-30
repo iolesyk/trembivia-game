@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -12,6 +14,10 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ModalComponent } from './modal/modal.component';
 import { ShopComponent } from './shop/shop.component';
+import { ChatComponent } from './game-board/chat/chat.component';
+import { GameBoardComponent } from './game-board/game-board.component';
+import { PreGameComponent } from './game-board/pre-game/pre-game.component';
+import { HostComponent } from './game-board/host/host.component';
 
 const appRoutes: Routes =[
   { path: '', component: LoginComponent},
@@ -19,7 +25,9 @@ const appRoutes: Routes =[
   { path: 'main', component: MainMenuComponent},
   { path: 'leaderboard', component: LeaderboardComponent},
   { path: 'profile', component: ProfileComponent},
-  { path: 'shop', component: ShopComponent}
+  { path: 'shop', component: ShopComponent},
+  { path: 'chat', component: ChatComponent},
+  { path: 'game-board', component: GameBoardComponent}
 ];
 
 @NgModule({
@@ -32,12 +40,18 @@ const appRoutes: Routes =[
     LeaderboardComponent,
     ProfileComponent,
     ModalComponent,
-    ShopComponent
+    ShopComponent,
+    ChatComponent,
+    GameBoardComponent,
+    PreGameComponent,
+    HostComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

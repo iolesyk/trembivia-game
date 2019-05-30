@@ -14,8 +14,8 @@ export class MainMenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  redirectGame() {
-    this.router.navigate(['/game']);
+  redirectGameBoard() {
+    this.router.navigate(['/game-board']);
   }
 
   redirectLeaderboard() {

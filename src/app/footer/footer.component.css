@@ -5,6 +5,8 @@ footer {
   bottom: 0;
   right: 0;
   padding: 20px;
+  background: white;
+  width: 100%;
 }
 
 span {
