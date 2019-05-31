@@ -3,15 +3,26 @@
 <div class="container">
   <div class="game-board">
 
-    <div *ngIf="!round && round != 0" class="pre-game">
+    <div *ngIf="!round && round != 0 && round !== 6" class="pre-game">
       <app-pre-game></app-pre-game>
     </div>
 
-    <div *ngIf="round || round == 0" class="host-block" [ngClass]="{'active': round >= 0}">
-      <app-host></app-host>
+    <div class="board-info" *ngIf="round >= 0 && round !== 6">
+      <div *ngIf="round || round == 0" class="host-block" [ngClass]="{'active': round > 0}">
+        <app-host></app-host>
+      </div>
+      <div *ngIf="round > 0" class="question-block">
+        <app-question [question]="question"></app-question>
+      </div>
     </div>
 
-    <app-chat [round]="round"></app-chat>
+    <div *ngIf="round === 6" class="end-game">
+      end game screen
+    </div>
+
+<div class="chat" *ngIf="round >= 0 && round !== 6">
+  <app-chat [round]="round"></app-chat>
+</div>
 
   </div>
 </div>

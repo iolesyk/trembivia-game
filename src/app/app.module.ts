@@ -18,6 +18,8 @@ import { ChatComponent } from './game-board/chat/chat.component';
 import { GameBoardComponent } from './game-board/game-board.component';
 import { PreGameComponent } from './game-board/pre-game/pre-game.component';
 import { HostComponent } from './game-board/host/host.component';
+import { QuestionComponent } from './game-board/question/question.component';
+import { EndGameComponent } from './game-board/end-game/end-game.component';
 
 const appRoutes: Routes =[
   { path: '', component: LoginComponent},
@@ -44,7 +46,9 @@ const appRoutes: Routes =[
     ChatComponent,
     GameBoardComponent,
     PreGameComponent,
-    HostComponent
+    HostComponent,
+    QuestionComponent,
+    EndGameComponent
   ],
   imports: [
     BrowserModule,

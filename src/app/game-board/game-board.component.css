@@ -1,3 +1,11 @@
 .host-block.active {
   width: 350px;
 }
+.board-info>div{
+  display: inline-block;
+}
+.question-block {
+  width: 700px;
+  vertical-align: top;
+  text-align: center;
+}

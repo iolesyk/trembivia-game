@@ -1,5 +1,6 @@
 import {ChangeDetectionStrategy, Component, Input, OnChanges, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
+import {BOTS, BEFOREROUND, ROUND1, ROUND2, ROUND3, ROUND4, ROUND5} from '../../users_questions';
 
 @Component({
   selector: 'app-chat',
@@ -11,143 +12,28 @@ export class ChatComponent implements OnInit, OnChanges {
   @Input() isChatActive: string;
   @Input() round: number;
   comment = new FormControl('');
-  bots = ['Walorine',
-    'Bug-Man',
-    'Thorus',
-    'Metal Man',
-    'Hulk',
-    'Captain la’America',
-    'Jin Greye',
-    'Deadriver',
-    'Silver Swimmer',
-    'Queen’s Gambit',
-    'Cyclopsis',
-    'Sir. Fantasticus',
-    'Nightbrawler',
-    'Nick Fursona',
-    'Torch',
-    'Icebaby',
-    'Professor Y',
-    'Doctor Weird',
-    'Skarlet Bitanga',
-    'Kitty Kat'
-  ];
-  beforeRound = ['Hype hype hype',
-    'Just in time',
-    'let’s go Boooiizzzzz',
-    'This one is mine today im feeling it',
-    'What’s up everyone',
-    'Look who joined',
-    'Human lol',
-    'Up in arms guys',
-    'I bet he sucks',
-    'They all do',
-    'Hey, too toxic',
-    'So what?',
-    'Stop it!',
-    'Force me :)',
-    'Lol',
-    'Ahahah',
-    'Host is hot',
-  ];
-  round1 = ['Easy question',
-    'Eeezzzyyy',
-    'Still in',
-    'Next one',
-    'Close one',
-    ':) :) :) :) :) :) :P',
-    'Gonna win this one boiiiizzz',
-    'Let’s gooooo',
-    'Omg',
-    'I’m salty af',
-    'Gosh i’m crying )))',
-    'Gonna get rich today',
-    'FYI humans suck',
-    '……',
-    'Metal Man sucks ^^',
-    'Idk',
-    'C’mon im tilted',
-    'Pipe it up',
-    'Any easter eggs??????',
-    'I got 2 for you',
-    'Wtf',
-    'I won!!!',
-    'No One loses here lol',
-    'Ready steady go',
-    'Next round let gooooo',
-    'GJ ppl',
-    'NUB',
-    'Ahha',
-    'Im bitter af',
-    'Good luck everyone'
-  ];
-  round2 = ['Have no clue',
-    'Hope everyone else lose',
-    'Got it on point',
-    'Missed this one',
-    'Stupid location',
-    'It’s not about location, it’s just you lol',
-    'Ahahaha',
-    'Looool',
-    'Anyone lags?',
-    'you'];
-  round3 = ['McDonalds wi-fi sucks man))',
-    'Loool',
-    'Aahah',
-    'ahahah^^',
-    'Btw i’m vegan',
-    'JK',
-    'HULK SMASH',
-    'It’s clobberin time!!!!',
-    'Spoon!?',
-    'Sweet chrismas',
-    'Meingott',
-    'Don’t worry it’s all be over soon];'];
-  round4 = ['How can i get paid?',
-    'With food looool',
-    'I’m crying',
-    'You gonna be my food))',
-    'Humans taste better though',
-    'Ahahah :):)',
-    'Stop it! You scaring them off',
-    'Don’t care much',
-    'Lol',
-    'I’m batman',
-    'Ahaha',
-    'No it’s me',
-    'Feel like i’m winning this one',
-    'Dont let HUMAN win',
-    'Assassination proposal?',
-    'Loool'];
-  round5 = ['A box of money is mineeeee',
-    'Good luck smarters',
-    'LETS PUT ANOTHER SHRIMP ON A BARBIE',
-    'Wtf',
-    'Gonna be rich baby',
-    'This game makes me salty))',
-    'Stand by lol',
-    'Who won?',
-    'Me',
-    'I won',
-    'Nobody lool',
-    'Everyones a winner',
-    'Except you ahaha',
-    'loool',
-    'What about HUMAN?'];
-
   comments = [];
+  bots = BOTS;
+  beforeRound = BEFOREROUND;
+  round1 = ROUND1;
+  round2: any = ROUND2;
+  round3: any = ROUND3;
+  round4: any = ROUND4;
+  round5: any = ROUND5;
 
   constructor() {
   }
 
   ngOnChanges() {
-    console.log(this.round);
-    this.ngOnInit(); // TODO refactor this shit
+    this.defineRound(this.round);
   }
 
   ngOnInit() {
-    console.log('round: ', this.round);
-    switch (this.round) {
+    this.defineRound(this.round);
+  }
+
+  defineRound(round) {
+    switch (round) {
       case 0:
         this.startChatting(this.beforeRound);
         break;
@@ -170,9 +56,6 @@ export class ChatComponent implements OnInit, OnChanges {
       default:
         console.log('no rounds');
         break;
-    }
-    if (!this.round) {
-
     }
   }
 
