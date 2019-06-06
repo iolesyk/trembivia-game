@@ -8,7 +8,7 @@ node {
             deleteDir() /* clean up our workspace */
     }
     stage('Clone repository') {
-        sh 'git clone https://github.com/elenakyrychenko93/trembivia-game.git'
+        sh 'git clone https://github.com/iolesyk/trembivia-game.git'
     }
 
     stage ("Build and run docker image") {
